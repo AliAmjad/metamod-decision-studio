@@ -1,0 +1,6 @@
+[build]
+  publish = "."
+  functions = "netlify/functions"
+
+# /api/run is routed by the exported config in netlify/functions/run.mjs.
+# The public Function has a per-IP rate limit configured in that file.

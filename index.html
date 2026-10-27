@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f5f0">
+  <title>Clearer decisions · Metamod</title>
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./config.js?v=netlify3" defer></script>
+  <script src="./charts.js?v=netlify3" defer></script>
+  <script src="./markdown.js?v=netlify3" defer></script>
+  <script src="./app.js?v=netlify3" defer></script>
+</head>
+<body>
+  <div class="shell">
+    <header class="masthead"><a class="brand" href="./">CLEAR<span> / </span>THINK</a><span class="tag">A space to think it through</span></header>
+    <main class="main">
+      <div class="page-heading"><div><span class="eyebrow">YOUR DECISION DESK <span class="dot">●</span> METAMOD AGENT</span><h1>Bring the question.<br><em>Keep the conversation going.</em></h1><p>Explore a decision, ask follow-ups, and work toward your next move.</p></div><button id="new-conversation" class="quiet-button" type="button">↺ &nbsp; New conversation</button></div>
+      <section class="conversation" aria-labelledby="conversation-title"><div class="conversation-header"><div><span class="index">THE CONVERSATION</span><h2 id="conversation-title">Think it through</h2></div><span class="conversation-mark" aria-hidden="true">↗</span></div><div id="conversation" class="messages" role="log" tabindex="0" aria-label="Conversation" aria-relevant="additions text"><div id="empty-state" class="empty-state"><span aria-hidden="true" class="empty-icon">◇</span><p>The best next step starts with a good question.</p><span>Share what you’re weighing, then keep asking until it feels clearer.</span></div></div><div class="feedback"><div id="status" role="status" aria-live="polite"></div><div id="error" role="alert" class="error" hidden></div></div></section>
+      <form id="question-form" class="composer"><div class="composer-top"><label for="question">YOUR QUESTION <span class="muted" id="composer-context">· Start a conversation</span></label><span class="composer-tip">Enter to send · Shift + Enter for a new line</span></div><textarea id="question" name="question" maxlength="12000" required placeholder="I’m weighing two paths and I’m not sure what matters most…"></textarea><div class="composer-bottom"><div class="actions"><button id="stop-button" class="quiet-button" type="button" hidden>Stop response</button><button type="submit" id="submit-button">Send question <span aria-hidden="true">↗</span></button></div></div></form>
+    </main>
+    <footer><span>Made for the questions worth asking.</span><span>Powered by your Metamod agent</span></footer>
+  </div>
+</body>
+</html>
